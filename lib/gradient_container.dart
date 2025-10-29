@@ -9,23 +9,21 @@ const endAlignment = Alignment.bottomCenter;
 
 // Gradient Container
 class GradientContainer extends StatelessWidget {
-  const GradientContainer({super.key});
+  const GradientContainer({super.key, required this.colors});
+
+  final List<Color> colors;
 
   @override
   Widget build(context) {
     return Container(
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         gradient: LinearGradient(
+          colors: colors,
           begin: startAlignment,
           end: endAlignment,
-          colors: [
-            Color.fromARGB(222, 0, 110, 236),
-            Color.fromARGB(255, 96, 110, 126),
-            Color.fromARGB(211, 45, 208, 116),
-          ],
         ),
       ),
-      child: const Center(child: StyledText()),
+      child: const Center(child: StyledText('GAY')),
     );
   }
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 // Main text widget
-import 'package:flutter_application_1/styled_text.dart';
+// import 'package:flutter_application_1/styled_text.dart';
 
 // Gradient variables
 const startAlignment = Alignment.topCenter;
@@ -23,7 +23,7 @@ class GradientContainer extends StatelessWidget {
           end: endAlignment,
         ),
       ),
-      child: const Center(child: StyledText('GAY')),
+      child: Center(child: Image.asset('assets/images/dice-1.png')),
     );
   }
 }

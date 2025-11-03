@@ -8,7 +8,7 @@ const startAlignment = Alignment.topCenter;
 const endAlignment = Alignment.bottomCenter;
 
 // Gradient Container
-class GradientContainer extends StatelessWidget {
+class GradientContainer extends StatefulWidget {
   GradientContainer({super.key, required this.colors});
 
   final List<Color> colors;
